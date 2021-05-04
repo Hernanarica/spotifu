@@ -1,0 +1,19 @@
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+@font-face {
+   font-family: Avenir;
+   src: url(../../assets/fonts/AvenirLTStd-Black.otf);
+   font-style: normal;
+   font-weight: 900;
+}
+
+@font-face {
+   font-family: Avenir;
+   src: url(../../assets/fonts/AvenirLTStd-Roman.otf);
+   font-style: normal;
+   font-weight: 400;
+}

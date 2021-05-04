@@ -1,0 +1,21 @@
+:root {
+   --primaryColor: #00B050;
+   --whiteColor: #fafafa;
+   --gray-10: #B3B3B3;
+   --gray-20: #737373;
+   --gray-30: #282828;
+   --gray-40: #181818;
+   --gray-50: #121212;
+   --gray-60: #000000;
+
+   /* Font */
+   --baseFontFamily: Avenir, Helvetica, sans-serif;
+
+   /* Texts Títulos | Fuentes de texto | Elementos especiales*/
+   --headLine-1: 900 2rem/2.732rem var(--baseFontFamily);
+   --headLine-2: 900 1.5rem/1.75rem var(--baseFontFamily);
+   --baseFont: 400 0.875rem/1.375rem var(--baseFontFamily);
+   --baseFontBold: 900 0.875rem/1.375rem var(--baseFontFamily);
+   --small: 400 0.75em/normal var(--baseFontFamily);
+   --button: 500 0.875rem/1rem var(--baseFontFamily);
+}
