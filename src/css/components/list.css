@@ -1,0 +1,23 @@
+.list {
+   padding-inline: 1.5rem;
+}
+
+.list__title {
+   font: var(--baseFont);
+   margin-block-start: 0;
+   margin-block-end: 0.5rem;
+}
+
+.list__content {
+   flex-direction: column;
+   gap: 0.5rem;
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   display: flex;
+}
+
+.list__link {
+   font: var(--baseFontBold);
+   transition: color 200ms;
+}

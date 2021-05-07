@@ -1,0 +1,36 @@
+.menu-item {
+}
+
+.menu-item.menu-item--active {
+   box-shadow: inset 4px 0 0 var(--primaryColor);
+}
+
+.menu-item.menu-item--active .menu-item__link {
+   color: var(--whiteColor);
+}
+
+.menu-item--active .btn-icon__home::before {
+   content: "\e90a";
+}
+
+.menu-item--active .btn-icon__search::before {
+   content: "\e914";
+}
+
+.menu-item .menu-item__link {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   padding-block: 0.5rem;
+   padding-inline: 1.5rem;
+   block-size: 2.5rem;
+   font: var(--button);
+}
+
+.menu-item .menu-item__link:hover {
+   text-decoration: none;
+}
+
+.menu-item__icon {
+   font-size: 1.5rem;
+}

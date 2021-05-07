@@ -7,8 +7,152 @@
 		<title>Spotifu</title>
 	</head>
 	<body class="body">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi eligendi eos fugit ipsam, pariatur perspiciatis quisquam sint sunt temporibus?
-		</p>
-		<a href="#" class="link">Click aquí</a>
+		<!--
+			Atributos nuevos
+			
+			aria-label => Sirve para darle un nombre a mi botón para cuando con screen reader(lector de pantalla) le pase por arriba.
+		   title => Sirve para cuando paso el mouse por arriba de mi botón, a este le salte un cartel con su función.
+		   aria-hidden => Valor booleano, es asignado a cosas que no quiero que sean visibles para mi screen reader.
+		   aria-current => hace referencia a donde estoy y va acompañado siempre de enlaces.
+		   aria-labelledby => su valor apunta a un ID de una etiqueta que esta tenga como hijo, sirve para identificar a cada elemento cuando tengo mucho de estos.
+		 -->
+		<!--
+			Propiedades nuevas
+			
+			   text-overflow: ellipsis;
+			   white-space: nowrap;
+		 -->
+		<div class="sidebar">
+			<header class="logo">
+				<a href="/" aria-current="page">
+					<img src="src/assets/imgs/spotifu-logo.png" width="112" height="32" alt="Logo de Spotifu" class="logo__image">
+				</a>
+			</header>
+			<nav class="menu" aria-label="Principal">
+				<ul class="menu__list">
+					<li class="menu-item menu-item--active">
+						<a href="/" aria-current="page" class="link menu-item__link">
+							<i class="btn-icon__home menu-item__icon" aria-hidden="true"></i>
+							<span>Inicio</span>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a href="/" class="link menu-item__link">
+							<i class="btn-icon__search menu-item__icon" aria-hidden="true"></i>
+							<span>Buscar</span>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a href="/" class="link menu-item__link">
+							<i class="btn-icon__credit-card menu-item__icon" aria-hidden="true"></i>
+							<span>Premium</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="list" aria-labelledby="navigation-library">
+				<h2 class="list__title" id="navigation-library">Tu biblioteca</h2>
+				<ul class="list__content">
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Creada para ti</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Escuchado recientemente</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Tus Me Gusta</a>
+						</span>
+					</li>
+				</ul>
+			</nav>
+			<nav class="list" aria-labelledby="navigation-playlist">
+				<h2 class="list__title" id="navigation-playlist">Playlist</h2>
+				<ul class="list__content">
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Lo mejor de lo mejor</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Naruto al 100% para programar</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Para cantar en la ducha</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Sin parar</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Naruto openings</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Boku no pico</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">This is Pokémon</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Más populares de la semana para ti que eres un pro</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Mis pistas de shazam</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Audio Library</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Amor y otras</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Latin</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Pokemon</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Para cantar</a>
+						</span>
+					</li>
+					<li class="list__item">
+						<span class="ellipsis">
+							<a href="#" class="list__link link">Yui</a>
+						</span>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<button class="btn-icon btn-icon--white" aria-label="Reproducir" title="Reproducir">
+			<i class="btn-icon__play" aria-hidden="true"></i>
+		</button>
 	</body>
 </html>

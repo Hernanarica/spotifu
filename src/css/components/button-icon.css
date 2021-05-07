@@ -1,0 +1,33 @@
+.btn-icon {
+   inline-size: 2.5rem;
+   block-size: 2.5rem;
+   background-color: transparent;
+   color: var(--gray-10);
+   border-radius: 50%;
+   border: none;
+   cursor: pointer;
+   transition: 350ms;
+}
+
+.btn-icon--white {
+   background-color: var(--whiteColor);
+   color: var(--gray-50);
+}
+
+.btn-icon--primary {
+   background-color: var(--primaryColor);
+   color: var(--whiteColor);
+}
+
+.btn-icon .btn-icon__play {
+   position: relative;
+   left: 1px;
+}
+
+.btn-icon:hover:is([class*="btn-icon--"]) {
+   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-icon:active {
+   transform: scale(.95);
+}
