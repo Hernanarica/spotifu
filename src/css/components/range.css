@@ -1,0 +1,35 @@
+.range {
+   block-size: 0.25rem;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 0.5rem;
+}
+
+.range:hover .range__progress {
+   background-color: var(--primaryColor);
+}
+
+.range:hover .range__btn {
+   display: block;
+}
+
+.range__progress {
+   position: relative;
+   block-size: inherit;
+   inline-size: 20%;
+   background-color: var(--whiteColor);
+   border-radius: inherit;
+}
+
+.range__btn {
+   position: absolute;
+   left: 100%;
+   top: 50%;
+   display: none;
+   padding: 0;
+   block-size: 200%;
+   aspect-ratio: 1/1;
+   background-color: var(--whiteColor);
+   border-radius: 50%;
+   border: none;
+   transform: translate(-50%, -50%);
+}

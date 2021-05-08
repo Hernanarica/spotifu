@@ -1,0 +1,14 @@
+.player-time {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.player-time__range {
+   flex: 1;
+}
+
+.player-time__progress {
+   font: var(--small);
+   line-height: 1;
+}

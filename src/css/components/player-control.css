@@ -1,0 +1,11 @@
+.player-controls {
+   display: flex;
+   flex-direction: column;
+   gap: 0.25rem;
+}
+
+.player-controls__buttons {
+   display: flex;
+   justify-content: center;
+   gap: 1.5rem;
+}
