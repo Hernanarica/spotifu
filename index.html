@@ -22,36 +22,6 @@
 			   text-overflow: ellipsis;
 			   white-space: nowrap;
 		 -->
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet autem blanditiis commodi corporis delectus doloribus eveniet facere harum ipsum laborum minima minus
-			nostrum pariatur porro, quibusdam repellendus rerum similique sunt velit veritatis vero voluptates. Ad cumque expedita in minima molestias porro quidem, rem soluta? A ad
-			aliquam, aut beatae corporis delectus doloribus eligendi hic illum inventore iure nesciunt nihil perferendis placeat quam quia quo rem repellendus repudiandae saepe soluta
-			suscipit ullam unde vel vero vitae voluptas? Beatae dignissimos dolore magni odio tenetur ut? Ab aut explicabo modi numquam praesentium! Adipisci eius hic nemo saepe ut?
-			Eius illum itaque libero!
-		</p>
-		<div class="player-controls">
-			<div class="player-controls__buttons">
-				<button class="btn-icon" aria-label="Anterior" title="Reproducir">
-					<i class="btn-icon__prev" aria-hidden="true"></i>
-				</button>
-				<button class="btn-icon btn-icon--white" aria-label="Reproducir" title="Reproducir">
-					<i class="btn-icon__play" aria-hidden="true"></i>
-				</button>
-				<button class="btn-icon" aria-label="Siguiente" title="Reproducir">
-					<i class="btn-icon__next" aria-hidden="true"></i>
-				</button>
-			</div>
-			<div class="player-time">
-				<span class="player-time__progress">01:40</span>
-				<div class="player-time__range">
-					<div class="range">
-						<div class="range__progress">
-							<button aria-label="Controlar el progreso de la reproducción" class="range__btn"></button>
-						</div>
-					</div>
-				</div>
-				<span class="player-time__progress">01:40</span>
-			</div>
-		</div>
 		<div class="sidebar">
 			<header class="logo">
 				<a href="/" aria-current="page">
@@ -181,8 +151,67 @@
 				</ul>
 			</nav>
 		</div>
-		<button class="btn-icon btn-icon--white" aria-label="Reproducir" title="Reproducir">
-			<i class="btn-icon__play" aria-hidden="true"></i>
-		</button>
+		<div class="player">
+			<div class="player__now-playing">
+				<div class="now-playing">
+					<div class="now-playing__cover">
+						<img src="src/assets/imgs/grand-scape.jpg" width="56" height="56" alt="Portada RADWIMPS, Toko Miura" title="Portada RADWIMPS, Toko Miura">
+					</div>
+					<div class="now-playing__details">
+						<div class="now-playing__description">
+							<a href="#song" class="now-playing__title">Grand Escape (feat. Tokio Miura)</a>
+							<a href="#RADWIMPS" class="now-playing__artist">RADWIMPS, Toko Miura</a>
+						</div>
+						<div class="now-playing__action">
+							<button class="btn-icon" role="switch" aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+								<i class="btn-icon__heart" aria-hidden="true"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="player__player-controls">
+				<div class="player-controls">
+					<div class="player-controls__buttons" aria-label="Controles de reproducción">
+						<button class="btn-icon" aria-label="Anterior" title="Anterior">
+							<i class="btn-icon__prev" aria-hidden="true"></i>
+						</button>
+						<button class="btn-icon btn-icon--white" aria-label="Reproducir" title="Reproducir">
+							<i class="btn-icon__play" aria-hidden="true"></i>
+						</button>
+						<button class="btn-icon" aria-label="Siguiente" title="Siguiente">
+							<i class="btn-icon__next" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="player-time">
+						<span class="player-time__progress">01:40</span>
+						<div class="player-time__range">
+							<div class="range">
+								<div class="range__progress">
+									<button aria-label="Controlar el progreso de la reproducción" class="range__btn"></button>
+								</div>
+							</div>
+						</div>
+						<span class="player-time__progress">01:40</span>
+					</div>
+				</div>
+			</div>
+			<div class="player__player-volume">
+				<div class="player-volume">
+					<button class="player-control" aria-label="Silenciar" aria-describedby="volumen-icon" title="Silenciar">
+						<i id="volumen-icon" class="btn-icon__volume-up" role="presentation" aria-label="Volumen alto"></i>
+					</button>
+					<div class="player-volume__range">
+						<div class="player-time__range">
+							<div class="range">
+								<div class="range__progress">
+									<button aria-label="Controlar el progreso de la reproducción" class="range__btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

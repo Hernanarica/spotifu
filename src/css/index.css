@@ -2,12 +2,11 @@
 @import "bootstrapping/variables.css";
 @import "bootstrapping/bootstrapping.css";
 
+/* Components */
 @import "components/icon.css";
 @import "components/body.css";
 @import "components/link.css";
 @import "components/button-icon.css";
 @import "components/sidebar.css";
 @import "components/ellipsis.css";
-@import "components/range.css";
-@import "components/player-control.css";
-@import "components/player-time.css";
+@import "components/player.css";

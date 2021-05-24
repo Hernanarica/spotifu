@@ -1,0 +1,10 @@
+.player-volume {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.player-volume__range {
+   flex: 1;
+   inline-size: 6rem;
+}
