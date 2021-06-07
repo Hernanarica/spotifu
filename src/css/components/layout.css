@@ -1,0 +1,48 @@
+:root {
+   --sideBarInlineSize: 15rem;
+   --playerBlockSize: 5.5rem;
+   --minInlineSize: 37.5rem;
+   --minBlockSize: 48rem;
+}
+
+.layout {
+   min-inline-size: var(--minInlineSize);
+}
+
+.layout__block {
+   display: flex;
+}
+
+.layout__sidebar,
+.layout__main {
+   overflow: auto;
+   /*min-block-size: var(--minBlockSize);*/
+}
+
+.layout__sidebar {
+   inline-size: var(--sideBarInlineSize);
+   block-size: calc(100vh - var(--playerBlockSize));
+   flex-shrink: 0;
+   background-color: var(--gray-60);
+}
+
+.layout__main {
+   block-size: calc(100vh - var(--playerBlockSize));
+}
+
+.layout__sidebar::-webkit-scrollbar,
+.layout__main::-webkit-scrollbar {
+   display: none;
+}
+
+.layout__player {
+   flex: 1;
+   block-size: var(--playerBlockSize);
+}
+
+@media screen and (max-width: 768px) {
+   .layout__sidebar,
+   .layout__main {
+      min-block-size: var(--minBlockSize);
+   }
+}

@@ -1,5 +1,5 @@
 :root {
-   /*font-size: 20px;*/
+   font-size: 16px;
    --primaryColor: #00B050;
    --whiteColor: #fafafa;
    --gray-10: #B3B3B3;
@@ -19,4 +19,10 @@
    --baseFontBold: 900 0.875rem/1.375rem var(--baseFontFamily);
    --small: 400 0.75em/normal var(--baseFontFamily);
    --button: 500 0.875rem/1rem var(--baseFontFamily);
+}
+
+@media screen and (min-width: 1367px) {
+   :root {
+      font-size: 18px;
+   }
 }

@@ -1,5 +1,3 @@
-@import "bootstrapping/normalize.css";
-@import "bootstrapping/variables.css";
 @import "bootstrapping/bootstrapping.css";
 
 /* Components */
@@ -10,3 +8,6 @@
 @import "components/sidebar.css";
 @import "components/ellipsis.css";
 @import "components/player.css";
+@import "components/page.css";
+@import "components/layout.css";
+@import "components/scrollbar.css";
