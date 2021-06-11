@@ -11,6 +11,7 @@
 @import "components/page.css";
 @import "components/layout.css";
 @import "components/scrollbar.css";
+@import "components/pageSecondary.css";
 
 /* Animations */
 @import "animations/animations.css";
