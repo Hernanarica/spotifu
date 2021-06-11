@@ -1,0 +1,90 @@
+[
+   {
+      "id": 1,
+      "title": "Counter Attack-Mankid",
+      "artist": "Hiroyuki Sawano",
+      "image": "attac-on-titan.jpg",
+      "startDate": "2020-12-18",
+      "duration": "6:06"
+   },
+   {
+      "id": 2,
+      "title": "Avatar's Love",
+      "artist": "Samuel Kim",
+      "image": "avatar.jpg",
+      "startDate": "2020-05-04",
+      "duration": "3:25"
+   },
+   {
+      "id": 3,
+      "title": "俺が君のヒーローになる",
+      "artist": "Yuki Hayashi",
+      "image": "boku-no-hero.jpg",
+      "startDate": "2020-03-31",
+      "duration": "2:59"
+   },
+   {
+      "id": 4,
+      "title": "PINK BLOOD",
+      "artist": "Hikaru Utada",
+      "image": "eternity.jpg",
+      "startDate": "2021-06-07",
+      "duration": "3:17"
+   },
+   {
+      "id": 5,
+      "title": "Might*U",
+      "artist": "Yuki Hayashi",
+      "image": "hero-recing.jpg",
+      "startDate": "2020-07-25",
+      "duration": "6:29"
+   },
+   {
+      "id": 6,
+      "title": "VIVID VICE",
+      "artist": "Who-ya Extended",
+      "image": "jujutsu-caisen.jpg",
+      "startDate": "2020-01-17",
+      "duration": "3:06"
+   },
+   {
+      "id": 7,
+      "title": "GodSuit | \"White Steel Eel\"",
+      "artist": "Kevin Penkin",
+      "image": "kevin-penkin.jpg",
+      "startDate": "2020-10-17",
+      "duration": "1:53"
+   },
+   {
+      "id": 8,
+      "title": "Hero(feat Josey Scoot)",
+      "artist": "Josey Scoot",
+      "image": "hero.jpg",
+      "startDate": "2003-01-01",
+      "duration": "3:20"
+   },
+   {
+      "id": 9,
+      "title": "Be Somebody",
+      "artist": "Thousand Foot Krutch",
+      "image": "thousand-foot-krutch.jpg",
+      "startDate": "2012-04-17",
+      "duration": "3:42"
+   },
+   {
+      "id": 10,
+      "title": "Cry Baby",
+      "artist": "Official HIGE DANdism",
+      "image": "tokyo-revenger.jpg",
+      "startDate": "2021-05-17",
+      "duration": "4:00"
+   },
+   {
+      "id": 11,
+      "title": "ハルカミライ",
+      "artist": "Kankakupiero",
+      "image": "haruka.jpg",
+      "startDate": "2017-11-22",
+      "duration": "2:57"
+   }
+]

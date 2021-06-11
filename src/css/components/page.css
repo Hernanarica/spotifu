@@ -21,3 +21,13 @@
    margin-inline-start: -2rem;
    margin-inline-end: -2rem;
 }
+
+.page-block__one {
+   /*display: none;*/
+}
+
+.page-block__two {
+   display: none;
+   opacity: 0;
+   will-change: opacity;
+}
