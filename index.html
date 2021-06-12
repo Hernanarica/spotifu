@@ -199,7 +199,7 @@
 							</div>
 						</div>
 						<main class="page-block">
-							<div class="page-block__one">
+							<div class="page-block__primary">
 								<section class="playlist-list" aria-labelledby="region-1">
 									<div class="playlist-list__top">
 										<h2 id="region-1" class="playlist-list__title">Buenas noches</h2>
@@ -370,20 +370,49 @@
 									<div class="playlist-list__container"></div>
 								</section>
 							</div>
-							<section class="page-secondary">
-								<div class="page-secondary__info">
-									<h2 class="page-secondary__title"></h2>
-									<div class="page-secondary__followers"></div>
-									<button class="page__btn"></button>
-								</div>
-								<div class="page__filter">
-									<i class="btn-icon__search"></i>
-									<input type="search" name="" id="" placeholder="Filtrar">
-								</div>
-								<div class="page-secondary__playlist"></div>
-							</section>
 						</main>
 					</div>
+					<!--							Pantalla secundaria-->
+					<div class="page-2">
+						<div class="page-2__content">
+							<div class="page-2__header">
+								<div class="sticky">
+									<div class="page-block">
+										<header class="header" aria-label="Barra superior y menú del usuario">
+											<div class="navigation">
+												<button class="navigation-btn-prev" aria-label="volver" title="Volver">
+													<i class="btn-icon__arrow-left" aria-hidden="true"></i>
+												</button>
+												<button class="navigation-btn-next" disabled aria-label="avanzar" title="Avanzar">
+													<i class="btn-icon__arrow-right" aria-hidden="true"></i>
+												</button>
+											</div>
+											<form action="#" class="search" role="search" aria-label="Buscar por artistas, canciones o podcast">
+												<i class="btn-icon__search" aria-hidden="true"></i>
+												<label for="page-2-search" class="sr-only">Buscar</label>
+												<input type="search" class="search__input" id="page-2-search" placeholder="Buscar por artistas, canciones o podcast">
+											</form>
+										</header>
+									</div>
+								</div>
+								<div class="page-2__info">
+									<h2 class="page-2__title">Weathering With You</h2>
+									<div class="page-2__data">
+										<h3 class="page-2__category">Anime Hits</h3>
+										<p class="page-2__followers">2,611,830 SEGUIDORES</p>
+									</div>
+									<button class="page__btn" title="Reproducir">REPRODUCIR</button>
+								</div>
+							</div>
+							<form action="#" class="page-2__filter">
+								<i class="btn-icon__search"></i>
+								<label for="filtrar" class="sr-only">Filtrar</label>
+								<input type="search" name="filtrar" id="filtrar" placeholder="Filtrar">
+							</form>
+							<div class="page-2__playlist"></div>
+						</div>
+					</div>
+					<!--							Pantalla secundaria-->
 				</div>
 			</div>
 			<div class="layout__block">

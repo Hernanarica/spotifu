@@ -1,0 +1,41 @@
+.page-2 {
+   display: none;
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 0;
+   will-change: opacity;
+}
+
+.page-2__content {
+   background: linear-gradient(rgba(23, 23, 23, 0.4), rgba(23, 23, 23, 1));
+}
+
+.page-2__header {
+   block-size: 19.8125rem;
+   border: 1px solid crimson;
+}
+
+.page-2__info {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 1rem;
+   margin-block-start: 5.4375rem;
+}
+
+.page-2__title {
+   font: var(--headLine-1);
+   color: var(--whiteColor);
+   margin: 0;
+}
+
+.page-2__data {
+   text-align: center;
+}
+
+.page-2__category,
+.page-2__followers {
+   font: var(--baseFont);
+   margin: 0;
+}

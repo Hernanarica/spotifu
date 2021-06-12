@@ -17,18 +17,34 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function getData(element) {
 	element.addEventListener('click', e => {
-		let musicId       = parseInt(e.currentTarget.dataset.music);
-		let pagePrinciple = document.querySelector('.page-block__one');
-		let pageSecondary = document.querySelector('.page-block__two');
+		let musicId      = parseInt(e.currentTarget.dataset.music);
+		let $page        = document.querySelector('.page');
+		let $page2       = document.querySelector('.page-2');
+		let $page2Header = document.querySelector('.layout__main .page-2 .header');
+		let $page2Title  = document.querySelector('.page-2__title');
+		console.log($page2Title);
+		// Pantallas
+		// let $header       = document.querySelector('.header');
+		// let $layoutPage   = document.querySelector('.layout__main');
+		// let $page         = document.querySelector('.page');
 
 		fetch('src/assets/API/spotify.json').then((res) => res.json()).then((data) => {
 			let currentMusic = data.filter(item => item.id === musicId);
-			console.log(currentMusic);
-			pagePrinciple.classList.add('fade-out');
+
+			// Aplicamos la animación
+			$page.classList.add('fade-out');
+
 			setTimeout(() => {
-				pagePrinciple.style.display = 'none';
-				pageSecondary.style.display = 'block';
-				pageSecondary.classList.add('fade-in');
+				$page.style.display          = 'none';
+				$page2Header.style.cssText   = 'backdrop-filter: blur(0);';
+				$page2.style.backgroundImage = `url(src/assets/imgs/${ currentMusic[0].poster })`;
+				$page2Title.innerText        = `${ currentMusic[0].artist }`;
+				$page2.style.display         = 'block';
+				//imagen de fondo del layout
+				// $page.style.blockSize             = '100%';
+				// $page.style.background            = 'linear-gradient(rgba(23, 23, 23, 0.4), rgba(23, 23, 23, 1))';
+
+				$page2.classList.add('fade-in');
 			}, 350);
 		});
 	});

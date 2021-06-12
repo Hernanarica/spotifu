@@ -27,7 +27,10 @@
 }
 
 .layout__main {
+   inline-size: 100%;
    block-size: calc(100vh - var(--playerBlockSize));
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .layout__sidebar::-webkit-scrollbar,

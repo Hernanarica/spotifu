@@ -5,7 +5,8 @@
       "artist": "Hiroyuki Sawano",
       "image": "attac-on-titan.jpg",
       "startDate": "2020-12-18",
-      "duration": "6:06"
+      "duration": "6:06",
+      "poster": "Hiroyuki-Sawano.jpg"
    },
    {
       "id": 2,
@@ -13,7 +14,8 @@
       "artist": "Samuel Kim",
       "image": "avatar.jpg",
       "startDate": "2020-05-04",
-      "duration": "3:25"
+      "duration": "3:25",
+      "poster": "samuel-kim.jpg"
    },
    {
       "id": 3,
@@ -21,7 +23,8 @@
       "artist": "Yuki Hayashi",
       "image": "boku-no-hero.jpg",
       "startDate": "2020-03-31",
-      "duration": "2:59"
+      "duration": "2:59",
+      "poster": "poster-boku-no-hero.jpg"
    },
    {
       "id": 4,
@@ -29,7 +32,8 @@
       "artist": "Hikaru Utada",
       "image": "eternity.jpg",
       "startDate": "2021-06-07",
-      "duration": "3:17"
+      "duration": "3:17",
+      "poster": "to-your-eternity.jpg"
    },
    {
       "id": 5,
@@ -37,7 +41,8 @@
       "artist": "Yuki Hayashi",
       "image": "hero-recing.jpg",
       "startDate": "2020-07-25",
-      "duration": "6:29"
+      "duration": "6:29",
+      "poster": "hero-ricing.jpg"
    },
    {
       "id": 6,
@@ -45,7 +50,8 @@
       "artist": "Who-ya Extended",
       "image": "jujutsu-caisen.jpg",
       "startDate": "2020-01-17",
-      "duration": "3:06"
+      "duration": "3:06",
+      "poster": "vivid-vice.jpg"
    },
    {
       "id": 7,
@@ -53,7 +59,8 @@
       "artist": "Kevin Penkin",
       "image": "kevin-penkin.jpg",
       "startDate": "2020-10-17",
-      "duration": "1:53"
+      "duration": "1:53",
+      "poster": "kevin-penkin-desk.jpg"
    },
    {
       "id": 8,
@@ -61,7 +68,8 @@
       "artist": "Josey Scoot",
       "image": "hero.jpg",
       "startDate": "2003-01-01",
-      "duration": "3:20"
+      "duration": "3:20",
+      "poster": "Josey-Scoot.jpg"
    },
    {
       "id": 9,
@@ -69,7 +77,8 @@
       "artist": "Thousand Foot Krutch",
       "image": "thousand-foot-krutch.jpg",
       "startDate": "2012-04-17",
-      "duration": "3:42"
+      "duration": "3:42",
+      "poster": "thousand.jpg"
    },
    {
       "id": 10,
@@ -77,7 +86,8 @@
       "artist": "Official HIGE DANdism",
       "image": "tokyo-revenger.jpg",
       "startDate": "2021-05-17",
-      "duration": "4:00"
+      "duration": "4:00",
+      "poster": "cry-baby.jpg"
    },
    {
       "id": 11,
@@ -85,6 +95,7 @@
       "artist": "Kankakupiero",
       "image": "haruka.jpg",
       "startDate": "2017-11-22",
-      "duration": "2:57"
+      "duration": "2:57",
+      "poster": "Kankakupiero.jpg"
    }
 ]

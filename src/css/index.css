@@ -5,13 +5,14 @@
 @import "components/body.css";
 @import "components/link.css";
 @import "components/button-icon.css";
+@import "components/page-button.css";
 @import "components/sidebar.css";
 @import "components/ellipsis.css";
 @import "components/player.css";
 @import "components/page.css";
+@import "components/page-2.css";
 @import "components/layout.css";
 @import "components/scrollbar.css";
-@import "components/pageSecondary.css";
 
 /* Animations */
 @import "animations/animations.css";
