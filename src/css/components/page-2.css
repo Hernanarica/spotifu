@@ -45,3 +45,7 @@
    padding-inline-end: 1.5rem;
    /*border: 1px solid crimson;*/
 }
+
+.page-2__playlist {
+   padding-inline-start: 0.5rem;
+}
