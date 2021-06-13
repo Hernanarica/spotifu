@@ -1,0 +1,39 @@
+.filter {
+   position: relative;
+   margin-block-start: 1rem;
+   margin-block-end: 1rem;
+   inline-size: 100%;
+   max-inline-size: 31.25rem;
+   /*border: 1px solid yellow;*/
+}
+
+.filter i {
+   position: absolute;
+   top: calc(50% - 0.5rem);
+   left: 0.5rem;
+   color: var(--whiteColor);
+}
+
+.filter__input {
+   padding-block-start: 0.5rem;
+   padding-block-end: 0.5rem;
+   padding-inline-start: 1.875rem;
+   padding-inline-end: 0.5rem;
+   background-color: transparent;
+   inline-size: 100%;
+   color: var(--whiteColor);
+   border: none;
+   transition: 300ms background-color, color;
+}
+
+.filter__input::placeholder {
+   color: var(--gray-10);
+}
+
+.filter__input:focus-within {
+   background-color: var(--gray-20);
+}
+
+.filter__input:focus-within.filter__input::placeholder {
+   color: var(--whiteColor);
+}

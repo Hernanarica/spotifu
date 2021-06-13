@@ -11,8 +11,11 @@
 @import "components/player.css";
 @import "components/page.css";
 @import "components/page-2.css";
+@import "components/page-3.css";
 @import "components/layout.css";
 @import "components/scrollbar.css";
+@import "components/filter.css";
+@import "components/tablePlayList.css";
 
 /* Animations */
 @import "animations/animations.css";

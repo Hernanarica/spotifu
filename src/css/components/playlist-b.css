@@ -6,6 +6,7 @@
    border-radius: .5rem;
    overflow: hidden;
    transition: 300ms background-color;
+   cursor: pointer;
 }
 
 .playlist-b:hover,

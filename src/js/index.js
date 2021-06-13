@@ -1,35 +1,45 @@
 window.addEventListener('DOMContentLoaded', () => {
+	let list1 = document.querySelector('.playlist-list[aria-labelledby="region-1"] .playlist-list__container');
 	let list2 = document.querySelector('.playlist-list[aria-labelledby="region-2"] .playlist-list__container');
 	let list3 = document.querySelector('.playlist-list[aria-labelledby="region-3"] .playlist-list__container');
 	let list4 = document.querySelector('.playlist-list[aria-labelledby="region-4"] .playlist-list__container');
 
-	insertData(list2);
-	insertData(list3);
-	insertData(list4);
+	insertDataListB(list1);
+	insertDataListA(list2);
+	insertDataListA(list3);
+	insertDataListA(list4);
 
 	setTimeout(() => {
-		let listAll = document.querySelectorAll('.playlist-list .playlist-list__container > .playlist-a');
-		listAll.forEach(music => {
-			getData(music);
+		let listAllB = document.querySelectorAll('.playlist-list .playlist-list__container > .playlist-b');
+		listAllB.forEach(music => {
+			getDataB(music);
+		});
+
+		let listAllA = document.querySelectorAll('.playlist-list .playlist-list__container > .playlist-a');
+		listAllA.forEach(music => {
+			getDataA(music);
 		});
 	}, 500);
 });
 
-function getData(element) {
+function getDataA(element) {
 	element.addEventListener('click', e => {
+		console.log(e.currentTarget);
 		let musicId      = parseInt(e.currentTarget.dataset.music);
 		let $page        = document.querySelector('.page');
 		let $page2       = document.querySelector('.page-2');
+		let $page3       = document.querySelector('.page-3');
 		let $page2Header = document.querySelector('.layout__main .page-2 .header');
 		let $page2Title  = document.querySelector('.page-2__title');
-		console.log($page2Title);
-		// Pantallas
-		// let $header       = document.querySelector('.header');
-		// let $layoutPage   = document.querySelector('.layout__main');
-		// let $page         = document.querySelector('.page');
+		let tableBody    = document.querySelector('.table tbody');
 
 		fetch('src/assets/API/spotify.json').then((res) => res.json()).then((data) => {
 			let currentMusic = data.filter(item => item.id === musicId);
+
+			// Insertamos la playlist en la tabla
+			for (let i = 0; i < 10; i++) {
+				insertDataTable(tableBody, currentMusic);
+			}
 
 			// Aplicamos la animación
 			$page.classList.add('fade-out');
@@ -40,9 +50,6 @@ function getData(element) {
 				$page2.style.backgroundImage = `url(src/assets/imgs/${ currentMusic[0].poster })`;
 				$page2Title.innerText        = `${ currentMusic[0].artist }`;
 				$page2.style.display         = 'block';
-				//imagen de fondo del layout
-				// $page.style.blockSize             = '100%';
-				// $page.style.background            = 'linear-gradient(rgba(23, 23, 23, 0.4), rgba(23, 23, 23, 1))';
 
 				$page2.classList.add('fade-in');
 			}, 350);
@@ -50,7 +57,40 @@ function getData(element) {
 	});
 }
 
-function insertData(element) {
+function getDataB(element) {
+	element.addEventListener('click', e => {
+		let musicId      = parseInt(e.currentTarget.dataset.music);
+		let $page        = document.querySelector('.page');
+		let $page3       = document.querySelector('.page-3');
+		let $page3Header = document.querySelector('.layout__main .page-3 .header');
+		let $page3Title  = document.querySelector('.page-3__title');
+		let tableBody    = document.querySelector('.page-3 .table tbody');
+
+		fetch('src/assets/API/spotify.json').then((res) => res.json()).then((data) => {
+			let currentMusic = data.filter(item => item.id === musicId);
+
+			// Insertamos la playlist en la tabla
+			for (let i = 0; i < 10; i++) {
+				insertDataTable(tableBody, currentMusic);
+			}
+
+			// Aplicamos la animación
+			$page.classList.add('fade-out');
+
+			setTimeout(() => {
+				$page.style.display          = 'none';
+				$page3Header.style.cssText   = 'backdrop-filter: blur(0);';
+				$page3.style.backgroundColor = '#000000';
+				$page3Title.innerText        = `${ currentMusic[0].artist }`;
+				$page3.style.display         = 'block';
+
+				$page3.classList.add('fade-in');
+			}, 350);
+		});
+	});
+}
+
+function insertDataListA(element) {
 	fetch('src/assets/API/spotify.json').then((res) => res.json()).then((data) => {
 		data.forEach(item => {
 			element.innerHTML += `
@@ -66,5 +106,44 @@ function insertData(element) {
 				</div>
 			`;
 		});
+	});
+}
+
+function insertDataListB(element) {
+	fetch('src/assets/API/spotify.json').then((res) => res.json()).then((data) => {
+		data.forEach(item => {
+			element.innerHTML += `	
+				<div class="playlist-b" data-music="${ item.id }">
+					<div class="playlist-b__cover">
+						<img src="./src/assets/imgs/${ item.image }" alt="carátula de la playlist" width="76" height="76">
+					</div>
+					<div class="playlist-b__details">
+						<h3 class="playlist-b__title">${ item.artist }</h3>
+						<div class="playlist-b__control">
+							<button class="btn-icon btn-icon--primary" aria-label="reproducir la lista de reproducción Naruto Openings & Endings"
+							        title="reproducir la lista de reproducción Naruto Openings & Endings">
+								<i class="btn-icon__play" aria-hidden="true"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			`;
+		});
+	});
+}
+
+function insertDataTable(element, data) {
+	data.forEach(item => {
+		element.innerHTML += `
+				<tr>
+					<td><i class="btn-icon btn-icon__play link"></i></td>
+					<td><i class="btn-icon btn-icon__heart link"></i></td>
+					<td><a href="#" class="list__link link">${ item.title }</a></td>
+					<td><a href="#" class="list__link link">${ item.artist }</a></td>
+					<td><a href="#" class="list__link link">${ item.title }</a></td>
+					<td>${ item.startDate }</td>
+					<td>${ item.duration }</td>
+				</tr>
+			`;
 	});
 }
